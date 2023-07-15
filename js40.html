@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling: try and catch</title>
+</head>
+<body>
+    
+</body>
+<script>
+    setTimeout(()=>{
+        console.log("I am handling Error")
+    },1000)
+    try{
+        console.log(lucky)
+    }
+    catch(error){
+        console.log(error)
+        console.log(error.name);
+        console.log(error.message);
+        console.log(error.stack);
+    }
+    // try is only applicable for synchronous function 
+    // try{
+    //     setTimeout(()=>{
+    //     console.log("error occured here due to asynchronous function")
+    //     console.log(lucky)
+    // },1000)
+    // }
+    // catch(error){
+    //     console.log(error)
+    // }
+</script>
+</html>

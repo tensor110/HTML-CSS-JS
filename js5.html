@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional expressions and switch case in JS</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a= prompt("Enter your age")
+    a= Number.parseInt(a)  // Converting string to number
+    if(a<18){
+        alert("You can't drive")
+    }
+    else if(a==18){
+        alert("Your age is 18")
+    }
+    else{
+        alert("You can drive")
+    }
+    console.log("Done")
+    console.log("You can",a<18?"not drive" : "drive")
+
+    const age= prompt("What is your age")
+    switch(age){
+        case '10':
+            console.log("You can't drive")
+            break;
+        case '20':
+            console.log("You can drive")
+            break
+        default:
+            console.log("Sorry")
+    }
+</script>
+</html>

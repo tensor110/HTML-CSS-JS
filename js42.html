@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API and Response & Request Headers</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let p= fetch("https://goweather.herokuapp.com/weather/india")
+    p.then((response)=>{
+        console.log(response.status)  //The http status code, eg-200
+        console.log(response.ok)    // boolean, true if the HTTP status code is 200-299
+        // console.log(response.text())
+        return response.json()
+        // The the above two lines only one will act b/c we can use only one body reading method
+    }).then((value)=>{
+        console.log(value)
+    })
+
+
+
+    
+    // Request Headers
+    // To set a request header in fetch, we can use the header option 
+    let uri= 'https://jsonplaceholder.typicode.com/users'
+
+    // new Headers()
+    // headers.append(name,value)
+    // name-> Content-Type, Content-Length, Accept, Accept-Language, X-Requested-With, User-agent
+    let h= new Headers()
+    h.append('Accept','application/json')
+    
+    // new Request(uri,options)
+    // options-> method, headers, body, mode
+    // methods-> GET, POST, PUT, DELETE, OPTIONS
+    let req= new Request(uri,{
+        method: 'GET',
+        headers: h,
+        mode: 'cors'
+    })
+
+    fetch(req)
+        .then((response)=>{
+            if(response.ok){
+                return response.json()
+            }
+            else{
+                throw new Error('Bad HTTP stuff')
+            }
+        })
+        .then((jsonData)=>{
+            console.log(jsonData)
+        })
+        .catch((err)=>{
+            console.log('ERROR',err.message)
+        })
+
+</script>
+</html>

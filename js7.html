@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function onePlusAvg(x,y){
+        return 1+(x+y)/2
+    }
+    let a=2
+    let b=4
+    let c=6
+    console.log("One plus average of a and b is ", onePlusAvg(a,b))
+    console.log("One plus average of a and b is ", onePlusAvg(b,c))
+    console.log("One plus average of a and b is ", onePlusAvg(a,c))
+
+    const sum=(p,q)=>{
+        return p+q
+    }
+    console.log(sum(9,7))
+
+    const hello=()=>{
+        console.log("Hey,how are you")
+        return "Hii"
+    }
+    let v=hello()
+    console.log(v)
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element only navigation</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About me</li>
+            <li>Hire me</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+</body>
+<script>
+    let b= document.body
+    console.log("First child of b is ", b.firstChild);
+    console.log("First Element child of b is ", b.firstElementChild);
+    console.log("Last Element child of b is ", b.lastElementChild);
+    console.log("Next Element child of b is ", b.nextElementSibling);
+    console.log("Previoous Element child of b is ", b.previousElementSibling)
+    const changeBgRed=()=>{
+        document.body.firstElementChild.style.background= "red"
+    }
+    console.log($0.children);  // Gives all the element nodes under $0
+</script>
+</html>

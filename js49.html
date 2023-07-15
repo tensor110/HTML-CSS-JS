@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance & Extends keyword</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Animal{
+        constructor(name){
+            this.name= name
+        }
+        run(){
+            console.log(this.name + " is running")
+        }
+        shout(){
+            console.log(this.name + " is shouting")
+        }
+    }
+
+    class Monkey extends Animal{
+        eat(){
+            console.log(this.name + " is eating banana")
+        }
+    }
+
+    let ani= new Animal("Bruno")
+    let m= new Monkey("Chimpu")
+    ani.shout()
+    m.eat()
+</script>
+</html>

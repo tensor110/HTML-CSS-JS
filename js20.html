@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parents & sibilings of an element</title>
+  </head>
+  <body>
+    <div>
+      <div class="first">first</div>
+      <div class="second">Second</div>
+    </div>
+  </body>
+  <script>
+    // console.log($0) // Most recently selected element
+    // console.log($1) // Last selected element
+    // console.log($0.childNodes) // It gives Most recently selected element's nodes like div,a,span,text etc
+    // console.log($0.nextSiblings) // It gives Most recently selected element's next node
+    console.log(document.body.firstChild);
+    a=document.body.firstChild
+    console.log(a.parentNode);
+    console.log(a.parentElement);
+    console.log(a.nextSibling);
+  </script>
+</html>

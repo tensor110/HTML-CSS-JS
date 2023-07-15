@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primitives and objects in JS</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 7 primitive data types
+    // nn bb ss u 
+    let a= null   // null
+    let b= 345   //number
+    let c= true  //boolean
+    let d= BigInt("567")  //bigint
+    let e= "Lucky"   //string
+    let f= Symbol("symbol")   //symbol
+    let g= undefined    //undefined
+    console.log(a,b,c,d,e,f,g)
+    console.log(typeof e)
+
+    //Objects in JS
+    const item= {
+        "Lucky": true,
+        "Shubh": false,
+        "Lovish": 67,
+        "Rohan": undefined
+    }
+    console.log(item["Lucky"])
+    console.log(item.Rohan)
+</script>
+</html>

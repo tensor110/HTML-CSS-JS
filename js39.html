@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async/ Await</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // async function lucky(){
+    //     return 5
+    // }
+    // lucky().then((x)=>{
+    //     alert(x)
+    // })
+
+    async function weather(){
+        let delhi_weather= new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("27 Deg")
+            },2000)
+        })
+        let bangalore_weather= new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                resolve("31 Deg")
+            },5000)
+        })
+        let delhiW= await delhi_weather
+        let bangaloreW= await bangalore_weather
+        return [delhiW,bangaloreW]
+    }
+    const rather = () =>{
+        console.log("Hey i am rather and I am not waiting")
+    }
+    let a= weather()
+    let b= rather()
+    a.then((value)=>{
+        console.log(value)
+    })
+    b.then((value)=>{
+        console.log(value)
+    })
+</script>
+</html>

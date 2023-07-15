@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes and Objects</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class RailwayForm{
+        submit(){
+            alert(this.name + ": Your form is submitted for train number " + this.trainno)
+        }
+        cancel(){
+            alert(this.name + ": Your form is canceled for train number " + this.trainno)
+        }
+        fill(givenname, trainno){
+            this.name= givenname
+            this.trainno= trainno
+        }
+    }
+
+    // Create a form for Lucky 
+    let luckyForm = new RailwayForm()
+    // Fill the form with Lucky's details 
+    luckyForm.fill("Lucky",13422)
+
+    // Create a form for Lucky 
+    let rohanForm = new RailwayForm()
+    // Fill the form with Rohan's details 
+    rohanForm.fill("Rohan",56234)
+
+    luckyForm.submit()
+    rohanForm.submit()
+    rohanForm.cancel()
+</script>
+</html>

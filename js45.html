@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage, Session Storage and Related Methods</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let key= prompt("Enter key")
+    let value= prompt("Enter value")
+    localStorage.setItem(key, value)
+    console.log(`The value at ${key} is ${localStorage.getItem(key)}`)
+    localStorage.removeItem(key)
+    localStorage.clear()
+    localStorage.length
+    localStorage.key(2)
+
+    // Session Storage exist only within the current browser 
+    // Methoids are same as localStorage 
+    sessionStorage.setItem(key,value)
+
+    // Storage Event 
+    window.onstorage = (e) =>{
+        alert("Changed")
+        console.log(e)
+    }
+    // It is triggered when updates are made to the same storage from other documents 
+</script>
+</html>

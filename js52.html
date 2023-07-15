@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getters, setters & Instance of Operator</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class Animal{
+        constructor(name){
+            this.name= Animal.capitalize(name)
+        }
+        walk(){
+            alert("Animal "+this.name + " is walking")
+        }
+        get name(){
+            return this._name    // Ine get and set "_name" is used
+        }
+        set name(newName){
+            this._name=newName
+        }
+    }
+    let a= new Animal("Bruno")
+    a.walk()
+    console.log(a.name)
+    a.name= "Jack"   // Set newName
+    console.log(a.name)  //Get name
+    let c=56
+
+    // instanceof returns true if belongs to the class 
+    console.log(a instanceof Animal)
+    console.log(c instanceof Animal)
+</script>
+</html>

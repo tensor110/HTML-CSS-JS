@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling Browser Events</title>
+</head>
+<body>
+    <button id="btn">Click me</button>
+</body>
+<script>
+    let x= function(e){
+        console.log(e)
+        console.log(e.target)
+        console.log(e.type)
+        console.log(e.clientX, e.clientY)
+        alert("Hello World 1!")
+    }
+    let y= function(e){
+        alert("Hello World 2!")
+    }
+    btn.addEventListener('click',x)
+    btn.addEventListener('click',y)
+    let a= prompt("What ia your favourite number?")
+    if(a=="2"){
+        btn.removeEventListener('click',x)
+    }
+    else if(a=="1"){
+        btn.removeEventListener('click',y)
+    }
+</script>
+</html>

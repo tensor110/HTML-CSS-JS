@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let num=[1,2,3,34,54]
+    let b=num.toString()  //b is now a string
+    console.log(b, typeof b)
+    let c= num.join("_")
+    console.log(c, typeof c)
+    // let r= num.pop()  //pop returns the popped value
+    // console.log(num,r)
+    let s= num.push(56)  //push returns the new array
+    console.log(num,s)
+    let t= num.shift()  //Removes an element from the start of the array
+    console.log(num,t)
+    let u= num.unshift()  //adds an element from the start of the array
+    console.log(num,u)
+    // delete num[0]
+    // console.log(num.length)  //delete function does not change the length
+    let num1 = [11,12,13,14]
+    let newArray= num.concat(num1)
+    console.log(newArray)
+    let compare=(a,b)=>{
+        return a-b
+    }
+    let n= [551,22,351,51,3,89]
+    // n.sort()  //It will sort according to the [0]th place number
+    n.sort(compare)  //It will sort acending wise
+    // n.reverse()  //It will sort in decending order
+    console.log(n)
+    let deletedValues= n.splice(2,3,1051,1052,1053,1055)  //It means it deletes the values form position 2 and cut next 3 values and add new values
+    console.log(n,deletedValues)
+    let newnum= n.slice(3)  //It will cut all the values 
+    let newNum= n.slice(3,5)
+    console.log(newNum)
+</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing HTML classes using js</title>
+    <style>
+        .yellow{
+            background-color: yellow;
+        }
+        .red{
+            background-color: red;
+        }
+        .dark{
+            color: black;
+        }
+        .white{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="first" class="yellow dark">
+        <span>Hey I am good</span>
+    </div>
+    <script>
+        first= document.getElementById("first")
+        first.className= "red white"
+        console.log(first.classList);
+        first.classList.remove("red")
+        first.classList.add("red")
+        first.classList.toggle("red")  //Adds the class if it doesn't exist, otherfwise remoove it
+        first.classList.contains("red")  
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using loops with arrays in Js</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let num= [3,54,1,2,4]
+    // for loop 
+    for(let i=0;i<num.length;i++){
+        console.log(num[i])
+    }
+    // for-Each loop 
+    num.forEach((element)=>{
+        console.log(element * element)
+    })
+    // Array Form 
+    let name="Lucky"
+    let arr = Array.from(name)
+    console.log(arr)
+    // for...of 
+    for(let i of num){
+        console.log(i)
+    }
+    // for...in
+    for(let i in num){
+        console.log(num[i])
+    }
+</script>
+</html>

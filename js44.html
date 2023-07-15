@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+<body>
+    
+</body>
+<script>
+    console.log(document.cookie)
+    document.cookie= "name=lucky1234000"
+    document.cookie= "name23=lucky98765000"
+    console.log(document.cookie)
+    document.cookie= "name=lucky" // Reseting the cookie name
+    console.log(document.cookie)
+    // To enter special characters in cookie name 
+    let key = prompt("Enter key")
+    let value = prompt("Enter value")
+    document.cookie= `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
+    console.log(document.cookie)
+    // To decode these cookies
+    // decodeURIComponent(...)
+
+    // We can't set multiple cookies at a time
+    // For eg- "name=lucky1234000, name23=lucky98765000"
+    // console.log(document.cookie) // It will print only one value
+
+    // But we can write like this 
+    document.cookie= "user=Lucky; path=/xyz; expires='day, date, time"
+</script>
+</html>

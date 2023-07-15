@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Error Object & Custom Errors and The finally clause</title>
+</head>
+<body>
+    
+</body>
+<script>
+    try{
+        // throw new Error("Lucky is not good")
+        throw new ReferenceError("Lucky is not good")
+    }
+    catch(error){
+        console.log(error.name)
+        console.log(error.message)
+        console.log(error.stack)
+    }
+    finally{
+        console.log("Finally occured")
+        //Close the file
+        //Exit teh loop
+    }
+</script>
+</html>
