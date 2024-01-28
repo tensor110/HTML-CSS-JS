@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring assignment and Spread Operator</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let arr = [1,2,3,9,8,7,6,5]
+    // let [a,b,c]= arr
+    // console.log(a,b,c)
+    // let [a,b,c, ...rest]= arr
+    // console.log(a,b,c, rest)
+    // let [a, , , ...rest]= arr
+    // console.log(a, rest)
+
+    // let {a, b}= {a: 1, b: 5}
+    // console.log(a,b)
+
+    // Spread Operator
+    let arr1 = [3,4,5]
+    let obj1 = {...arr1}
+    console.log(obj1)
+
+    function sum(v1,v2,v3){
+        return v1+v2+v3
+    }
+    console.log(sum(...arr1))
+
+// To cahnge a paricular value 
+let obj2 = {
+    name: "Ram",
+    company: "Company XYZ",
+    address: "XYZ"
+}
+console.log({...obj2, name: "Hari"})
+</script>
+</html>

@@ -13,10 +13,11 @@
     let value= prompt("Enter value")
     localStorage.setItem(key, value)
     console.log(`The value at ${key} is ${localStorage.getItem(key)}`)
+    localStorage.getItem(key)
     localStorage.removeItem(key)
     localStorage.clear()
     localStorage.length
-    localStorage.key(2)
+    localStorage.key(index)
 
     // Session Storage exist only within the current browser 
     // Methoids are same as localStorage 
