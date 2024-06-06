@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local and Global Scope</title>
+</head>
+<body>
+    
+</body>
+<Script>
+    let p = 9
+    function func(){
+        let a = 2
+        console.log(p)
+        console.log(a)
+    }
+    console.log(p)  //p is a global varable
+    console.log(a)  //a is a local variable
+</Script>
+</html>
