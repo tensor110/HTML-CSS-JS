@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(168, 140, 243);
+        }
+        .container{
+            background-color: rgb(252, 247, 249);
+            border: 3px solid rgb(22, 19, 230);
+            /* We can set margin/padding for top right bottom left like this  */
+            /* padding-left: 34px;
+            padding-top: 12px;
+            padding-bottom: 12px; */
+
+            /*Also we write like this padding/margin: top right bottom left;*/
+            /* padding: 23px 55px 8px 33px; */
+
+            /* padding: y(top/bottom) x(right/left);  */
+            padding: 34px 19px;
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quis dolore rem, ducimus, provident similique vero consequuntur accusamus expedita exercitationem velit. Nulla exercitationem nisi totam beatae consequuntur, commodi eum impedit.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quis dolore rem, ducimus, provident similique vero consequuntur accusamus expedita exercitationem velit. Nulla exercitationem nisi totam beatae consequuntur, commodi eum impedit.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quis dolore rem, ducimus, provident similique vero consequuntur accusamus expedita exercitationem velit. Nulla exercitationem nisi totam beatae consequuntur, commodi eum impedit.</p>
+    </div>
+</body>
+</html>

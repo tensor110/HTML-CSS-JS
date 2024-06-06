@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body{
+            font-family: 'Oleo Script Swash Caps', cursive;
+        }
+
+        .container{
+            width: 1200px;
+            border: 4px solid green;
+            background-color: rgb(231, 151, 29);
+            margin: 30px auto;
+        }
+        
+        .item{
+            border: 4px solid black;
+            border-radius: 15px;
+            margin: 10px;
+            padding: 10px 12px;
+            background: rgb(238, 155, 155);
+        }
+
+        #fruit{
+            float: left;
+            width: 45%;
+        }
+        #computer{
+            float: right;
+            width: 45%;
+        }
+        #stationary{
+            /* float: left; */
+            clear: both;
+            width: 96%;
+        }
+        p, h3{
+            /* text-align: right; */
+            /* text-align: left; */
+            /* text-align: center; */
+            text-align: justify;
+        }
+        h1{
+            margin: 13px 223px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO MY STORE</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore porro fuga nemo facilis explicabo temporibus a laborum sequi nesciunt magni, quas, repudiandae eos rerum beatae, ipsa possimus similique saepe sunt?</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computers</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore porro fuga nemo facilis explicabo temporibus a laborum sequi nesciunt magni, quas, repudiandae eos rerum beatae, ipsa possimus similique saepe sunt?</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore porro fuga nemo facilis explicabo temporibus a laborum sequi nesciunt magni, quas, repudiandae eos rerum beatae, ipsa possimus similique saepe sunt?</p>
+        </div>
+    </div>
+</body>
+</html>

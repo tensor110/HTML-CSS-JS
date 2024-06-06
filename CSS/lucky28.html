@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            /* border: 2px solid red; */
+            padding: 20px 10px;
+            margin: 14px;
+            background-color: burlywood;
+            /* box-shadow: x-direction  y-direction  blur-radius  spread-radius  color(rgba-red green blue alpha(for darkness)); */
+            box-shadow: 3px 3px 5px 5px rgba(4, 40, 44, 0.8);
+            /* negative value for oppsite sides  */
+            /* box-shadow: -3px -3px 5px 5px green; */
+
+            /* If you want shadow inside box then use inset  */
+            /* box-shadow: inset 3px 3px green; */
+            /* for multiple shadow use comma  */
+            /* box-shadow: 3px 3px green, 4px 4px yellowgreen; */
+        }
+        .card h2{
+            text-shadow: 2px 3px 4px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi officiis recusandae nobis laudantium cum minus facere facilis optio molestiae nihil quasi eveniet doloremque ea similique eum, quia voluptatibus delectus voluptas labore illo accusamus. Quae.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi officiis recusandae nobis laudantium cum minus facere facilis optio molestiae nihil quasi eveniet doloremque ea similique eum, quia voluptatibus delectus voluptas labore illo accusamus. Quae.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi officiis recusandae nobis laudantium cum minus facere facilis optio molestiae nihil quasi eveniet doloremque ea similique eum, quia voluptatibus delectus voluptas labore illo accusamus. Quae.</p>
+        </div>
+    </div>
+</body>
+</html>

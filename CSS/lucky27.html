@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <style>
+        body{
+            background-image: url(lucky27.jpg);
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(5, 41, 5);
+            color: chartreuse;
+        }
+        header::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+        section{
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid blue;
+            height: 280px;
+            align-items: center;
+            justify-content: center;
+        }
+        .navigation{
+            font-size: large;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 10PX;
+        }
+        h3{
+            font-size: 35px;
+        }
+        /* section::after{
+            content: "This is a content";
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcome to Coding World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aliquam est ratione fugit, consequuntur nobis! At nesciunt hic, eveniet ut debitis mollitia? Ipsam debitis, adipisci accusantium sint placeat vel inventore!</p>
+        </section>
+    </header>
+</body>
+</html>
